@@ -6,14 +6,8 @@
       "dest": "/public/portal.html"
     },
     {
-      "src": "/api/(.*)",
+      "src": "/(.*)",
       "dest": "/api/server.js"
-    }
-  ],
-  "builds": [
-    {
-      "src": "api/server.js",
-      "use": "@vercel/node"
     }
   ],
   "env": {
@@ -23,6 +17,8 @@
     "GOOGLE_API_KEY": "",
     "MISTRAL_API_KEY": "",
     "CLAUDE_API_KEY": ""
+  },
+  "build": {
+    "env": {}
   }
 }
-
