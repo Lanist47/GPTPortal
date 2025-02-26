@@ -2,6 +2,10 @@
   "version": 2,
   "routes": [
     {
+      "src": "/script.js",
+      "dest": "/public/script.js"
+    },
+    {
       "src": "/portal",
       "dest": "/public/portal.html"
     },
