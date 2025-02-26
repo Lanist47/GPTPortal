@@ -18,7 +18,8 @@
     "MISTRAL_API_KEY": "",
     "CLAUDE_API_KEY": ""
   },
-  "build": {
-    "env": {}
+"build": {
+  "env": {
+    "VERCEL_FORCE_INCLUDE": "public/script.js"
   }
 }
