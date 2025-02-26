@@ -3071,3 +3071,7 @@ window.selectModel = function(modelID) {
   originalSelectModel(modelID);
   updateTokensSlider(modelID);
 };
+document.getElementById("toggle-models").addEventListener("click", function() {
+    let modelOptions = document.getElementById("model-options");
+    modelOptions.style.display = (modelOptions.style.display === "none" || modelOptions.style.display === "") ? "block" : "none";
+});
